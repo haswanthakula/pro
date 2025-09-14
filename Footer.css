@@ -1,0 +1,55 @@
+.site-footer{
+  background: linear-gradient(180deg,#0b3a35,#0e4b43);
+  color:#fff;
+  padding:40px 0 12px;
+  margin-top: 40px;
+}
+.footer-inner{
+  display:flex;
+  gap:24px;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:0 20px;
+}
+.col{ flex:1; min-width:180px; }
+.brand-row{ display:flex; gap:12px; align-items:center; }
+.logoSquare{
+  width:44px; height:44px; border-radius:6px; background:var(--accent);
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  transform: translateY(0);
+  transition: transform .25s ease;
+}
+.logoSquare:hover{ transform: translateY(-4px); }
+.footer-brand{ font-weight:700; font-size:16px; margin-bottom:4px; }
+.footer-sub{ font-size:13px; opacity:0.9; }
+
+.links-col a, .legal-col a{
+  display:block; color: rgba(255,255,255,0.9); text-decoration:none; margin:6px 0; font-size:14px;
+}
+.links-col a:hover, .legal-col a:hover{ text-decoration:underline; }
+
+.copy-right{
+  text-align:center;
+}
+
+copyright{
+  display:block;
+}
+
+copyright, .copyright{
+  color: rgba(255,255,255,0.75);
+  font-size:13px;
+  text-align:center;
+  margin-top:18px;
+}
+@media (max-width:880px){
+  .footer-inner{ flex-direction:column; gap:20px; }
+}
+
+.socials{ display:flex; gap:10px; margin-top:8px; }
+.socials a{
+  width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center;
+  border-radius:8px; background:rgba(255,255,255,0.08); text-decoration:none;
+  transition: transform .18s ease, background .18s ease;
+}
+.socials a:hover{ transform: translateY(-3px); background: rgba(255,255,255,0.14); }
